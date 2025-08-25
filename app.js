@@ -59,7 +59,7 @@ newStory.addEventListener("click", () => {
         stories.articles.push(newStoryObj)
         localStorage.setItem("news", JSON.stringify(stories))
 
-        alert("הכתבה נשמרה בהצלחה!")
+        alert("the stories seved i successfully ")
     })
         main.append(title, craetTitle, txtTitle, file, titleDescription, Description,saveBtn)
     })
