@@ -1,0 +1,164 @@
+body {
+    background-color: white;
+    width: 98vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+header {
+    padding: 1%;
+    margin-bottom: 5%;
+    height: 5%;
+    width: 98%;
+    display: flex;
+    justify-content: right;
+    border: 1px solid black;
+    background-color: black;
+}
+
+header a {
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+header a:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.main {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    transition: transform 0.5s;
+    width: 20%;
+    height: 40%;
+    display: grid;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    grid-template-rows: 50% 40% 10%;
+    border: 1px solid black;
+    border-radius: 1.2rem;
+    grid-template-areas:
+        "pic"
+        "title"
+        "reporter"
+    ;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+img {
+    grid-area: pic;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    font-weight: bold;
+    grid-area: title;
+    text-decoration: none;
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.report {
+    padding-left: 3%;
+    align-self: end;
+    grid-area: reporter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+.newMain {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.newCard {
+    margin-top: -3%;
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 60%;
+    display: grid;
+    background-color: white;
+    grid-template-rows: 50% 20% 30%;
+    grid-template-areas:
+        "pic"
+        "title"
+        "reporter"
+    ;
+}
+
+.newPic {
+    grid-area: pic;
+    width: 50%;
+    height: 100%;
+}
+
+.newTitle {
+    font-weight: bold;
+    grid-area: title;
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+.mainStory {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 50vw;
+    margin: 0px;
+    page: 1px;
+
+}
+
+.newStory {
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainStory p {
+    margin-bottom: 3px;
+}
+
+.inputTitle{
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.Description {
+    width: 50%;
+    height: 20%;
+    margin-bottom: 2%;
+}
+
+.button {
+
+    width: 25%;
+}
